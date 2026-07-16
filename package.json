@@ -6,7 +6,8 @@
   "scripts": {
     "build": "npx @11ty/eleventy",
     "dev": "npx @11ty/eleventy --serve",
-    "clean": "rm -rf _site"
+    "clean": "rm -rf _site",
+    "push": "git add . && git commit -m \"update\" && git push"
   },
   "keywords": [],
   "author": "",

@@ -15,9 +15,9 @@
   {% if ogImage %}<meta property="og:image" content="{{ site.url }}{{ ogImage }}">{% endif %}
 
   {# RSS feed #}
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }} Feed" href="/feed.xml">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }} Feed" href="{{ '/feed.xml' | url }}">
 
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
 </head>
 <body>
   {% include "components/header.njk" %}
@@ -30,6 +30,6 @@
 
   {% include "components/footer.njk" %}
 
-  <script src="/assets/js/main.js"></script>
+  <script src="{{ '/assets/js/main.js' | url }}"></script>
 </body>
 </html>

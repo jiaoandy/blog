@@ -1,1 +1,1 @@
-<a href="/tags/{{ tag | slug }}/" class="tag-badge">{{ tag }}</a>
+<a href="{{ ('/tags/' + (tag | slug) + '/') | url }}" class="tag-badge">{{ tag }}</a>

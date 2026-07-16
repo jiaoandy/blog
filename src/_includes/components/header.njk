@@ -1,12 +1,12 @@
 <header class="site-header">
   <div class="header-inner">
-    <a class="site-logo" href="/">{{ site.title }}</a>
+    <a class="site-logo" href="{{ '/' | url }}">{{ site.title }}</a>
     <nav class="site-nav" aria-label="Main navigation">
       <ul class="nav-list">
         {% for item in navigation.main %}
           <li class="nav-item">
             <a class="nav-link{% if page.url == item.url %} nav-link--active{% endif %}"
-               href="{{ item.url }}"
+               href="{{ item.url | url }}"
                {% if page.url == item.url %}aria-current="page"{% endif %}>
               {{ item.label }}
             </a>

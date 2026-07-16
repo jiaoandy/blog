@@ -11,7 +11,7 @@ permalink: /tags/
     <div class="tags-cloud">
       {% for tagName in collections.allTags %}
         {% set tagCount = collections[tagName] | length %}
-        <a href="/tags/{{ tagName | slug }}/" class="tag-cloud-item">
+        <a href="{{ ('/tags/' + (tagName | slug) + '/') | url }}" class="tag-cloud-item">
           <span class="tag-cloud-name">{{ tagName }}</span>
           <span class="tag-cloud-count">{{ tagCount }}</span>
         </a>

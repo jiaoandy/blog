@@ -1,8 +1,8 @@
 {
   "title": "My Blog",
   "description": "A personal blog about technology and life",
-  "url": "https://username.github.io",
-  "baseUrl": "/",
+  "url": "https://jiaoandy.github.io/blog",
+  "baseUrl": "/blog/",
   "author": {
     "name": "Author",
     "email": ""
