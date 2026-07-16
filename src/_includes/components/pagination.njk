@@ -1,0 +1,17 @@
+<nav class="pagination" aria-label="Page navigation">
+  {% if pagination.href.previous %}
+    <a class="page-link page-prev" href="{{ pagination.href.previous }}">← 上一页</a>
+  {% else %}
+    <span class="page-link page-prev page-link--disabled">← 上一页</span>
+  {% endif %}
+
+  <span class="page-info">
+    第 {{ pagination.pageNumber + 1 }} / {{ pagination.pages.length }} 页
+  </span>
+
+  {% if pagination.href.next %}
+    <a class="page-link page-next" href="{{ pagination.href.next }}">下一页 →</a>
+  {% else %}
+    <span class="page-link page-next page-link--disabled">下一页 →</span>
+  {% endif %}
+</nav>

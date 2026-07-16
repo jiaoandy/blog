@@ -1,0 +1,23 @@
+---
+layout: layouts/base
+title: 标签
+permalink: /tags/
+---
+
+<div class="tags-index">
+  <h1 class="tags-index-title">所有标签</h1>
+
+  {% if collections.allTags | length %}
+    <div class="tags-cloud">
+      {% for tagName in collections.allTags %}
+        {% set tagCount = collections[tagName] | length %}
+        <a href="/tags/{{ tagName | slug }}/" class="tag-cloud-item">
+          <span class="tag-cloud-name">{{ tagName }}</span>
+          <span class="tag-cloud-count">{{ tagCount }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="empty-state">还没有标签。</p>
+  {% endif %}
+</div>

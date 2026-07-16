@@ -1,0 +1,10 @@
+{
+  "recentPosts": {
+    "enabled": true,
+    "count": 5
+  },
+  "tagCloud": {
+    "enabled": false,
+    "maxTags": 20
+  }
+}

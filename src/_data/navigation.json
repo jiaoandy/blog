@@ -1,0 +1,7 @@
+{
+  "main": [
+    { "label": "首页", "url": "/" },
+    { "label": "标签", "url": "/tags/" },
+    { "label": "关于", "url": "/about/" }
+  ]
+}

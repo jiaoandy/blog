@@ -1,0 +1,26 @@
+---
+layout: layouts/base
+pagination:
+  data: collections.posts
+  size: 5
+  alias: paginatedPosts
+permalink: "{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+---
+
+<div class="home-intro">
+  <h1 class="home-title">{{ site.title }}</h1>
+  <p class="home-description">{{ site.description }}</p>
+</div>
+
+{% if collections.posts | length %}
+  <div class="post-list">
+    {% for post in paginatedPosts %}
+      {% include "components/article-card.njk" %}
+    {% endfor %}
+  </div>
+  {% include "components/pagination.njk" %}
+{% else %}
+  <div class="empty-state">
+    <p>还没有文章，开始写作吧 ✍️</p>
+  </div>
+{% endif %}

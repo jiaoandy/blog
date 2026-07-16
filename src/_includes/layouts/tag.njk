@@ -1,0 +1,12 @@
+---
+layout: layouts/base
+---
+<h1 class="tag-page-title">标签：{{ tag }}</h1>
+
+<div class="post-list">
+  {% for post in collections[tag] %}
+    {% include "components/article-card.njk" %}
+  {% endfor %}
+</div>
+
+<p class="back-link"><a href="/tags/">← 查看所有标签</a></p>

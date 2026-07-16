@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-text">
+      &copy; {% currentYear %} {{ site.author.name }}. Powered by <a href="https://www.11ty.dev/">Eleventy</a>.
+    </p>
+    <div class="footer-links">
+      {% if social.github %}
+        <a href="{{ social.github }}" class="footer-link" target="_blank" rel="noopener">GitHub</a>
+      {% endif %}
+      {% if social.email %}
+        <a href="mailto:{{ social.email }}" class="footer-link">Email</a>
+      {% endif %}
+    </div>
+  </div>
+</footer>

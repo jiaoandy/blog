@@ -1,0 +1,10 @@
+---
+pagination:
+  data: collections.allTags
+  size: 1
+  alias: tag
+permalink: "/tags/{{ tag | slug }}/"
+layout: "layouts/tag"
+eleventyComputed:
+  title: "标签：{{ tag }}"
+---

@@ -1,0 +1,16 @@
+{
+  "title": "My Blog",
+  "description": "A personal blog about technology and life",
+  "url": "https://username.github.io",
+  "baseUrl": "/",
+  "author": {
+    "name": "Author",
+    "email": ""
+  },
+  "defaultLanguage": "zh-CN",
+  "postsPerPage": 5,
+  "dateFormat": {
+    "locale": "zh-CN",
+    "options": { "year": "numeric", "month": "long", "day": "numeric" }
+  }
+}
